@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: starbug-minio-demo
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 200MB
+server:
+  port: 8088
+minio:
+  endpoint: http://127.0.0.1:9001
+  accessKey: minio
+  secretKey: minio@123456
+  nginxHost: http://127.0.0.1
